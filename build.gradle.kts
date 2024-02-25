@@ -23,7 +23,12 @@ repositories {
 
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
-//    implementation(libs.annotations)
+    implementation(libs.annotations)
+//    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+//    implementation("org.jetbrains.kotlin:kotlin-compiler")
+//    implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.jetbrains.kotlin:kotlin-psi:1.9.20")
+
 }
 
 // Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.

@@ -5,11 +5,15 @@
     <vendor>cracklybody</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java-capable</depends>
+    <depends>com.intellij.modules.lang</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.cracklybody.habrinlayhintswizard.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+
+        <codeInsight.inlayProvider implementationClass="com.github.cracklybody.habrinlayhintswizard.presentation.WizardInlayHintsProvider"
+                                   language="kotlin"/>
     </extensions>
 
     <applicationListeners>
